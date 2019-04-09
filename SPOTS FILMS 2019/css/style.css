@@ -40,13 +40,16 @@ position: fixed;
 margin-top: -220px;
 right: 0;
 left: 0;
-height: 46px;
+height: 80px;
 }
 
 .spotsblue{
   background: #0d313d;
 }
 
+.scootup{
+  margin-top: -11rem !important;
+}
 
 .spotsintro {
   position: fixed;
@@ -91,6 +94,55 @@ height: 46px;
     }
 }
 
+@-webkit-keyframes movetitle {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 20px);
+    }
+}
+@keyframes movetitle {
+     0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 20px);
+    }
+}
+
+@-webkit-keyframes movetitleback {
+    0% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes movetitleback {
+     0% {
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.titlemover{
+-webkit-animation: movetitle 0.5s 1  normal forwards ease-out;
+animation: movetitle 0.5s 1  normal forwards ease-out;
+
+}
+
+.titlemover:hover {
+-webkit-animation: movetitleback 0.5s 1  normal forwards ease-out;
+animation: movetitleback 0.5s 1  normal forwards ease-out;
+
+}
 .vimeo-wrapper {
    position: fixed;
    margin-top: -180px;
@@ -136,6 +188,7 @@ height: 46px;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 .spotsnav * {
   -webkit-box-sizing: border-box;
@@ -224,6 +277,7 @@ color: #f4921d !important;
 
 #peterimage, #bradimage, #benimage, #steveimage{
   cursor: pointer !important;
+
 }
 
 .hovertitle:hover{
@@ -231,6 +285,7 @@ color: #f4921d !important;
 }
 #peterimage:hover + #petertitle {
   color: #f4921d !important;
+  
 }
 #bradimage:hover + #bradtitle {
   color: #f4921d !important;
@@ -242,6 +297,3 @@ color: #f4921d !important;
   color: #f4921d !important;
 }
 
-.lity-close{
-  position: absolute !important;
-}
