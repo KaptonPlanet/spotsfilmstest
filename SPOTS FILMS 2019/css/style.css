@@ -1,0 +1,239 @@
+.spotsbg {
+ background: #0d313d;
+ height: 100vh;
+ z-index: 1;
+}
+
+a {
+   outline: 0;
+}
+
+ p { font-family: futura-pt, sans-serif;
+font-style: normal;
+font-size: 1.2em;
+font-weight: 300;
+color: #fff; 
+margin-bottom: 0 !important;
+}
+
+.upfront{
+  z-index: 999;
+  position: relative;
+}
+
+h2{ font-family: futura-pt, sans-serif;
+font-style: normal;
+font-size: 28px;
+font-weight: 400;
+color: #fff; }
+
+h3{ font-family: futura-pt, sans-serif;
+font-style: normal;
+font-size: 21px;
+font-weight: 400;
+color: #fff; }
+
+
+.spotsnavbar {
+z-index: 998;
+position: fixed;
+margin-top: -220px;
+right: 0;
+left: 0;
+height: 46px;
+}
+
+.spotsblue{
+  background: #0d313d;
+}
+
+
+.spotsintro {
+  position: fixed;
+  bottom: 60px;
+  width: 75%;
+  right:0;
+}
+
+#float {
+    position: relative;
+    -webkit-animation: logoanimate 2s 1  normal forwards ease-out;
+    animation: logoanimate 2s 1  normal forwards ease-out;
+    z-index: 999 !important;
+}
+
+@-webkit-keyframes logoanimate {
+    0% {
+        top:300px; transform: scale(0.5); transform-origin: center; opacity: 0;
+    }
+    15% {
+        top:300px; transform: scale(0.9); transform-origin: center; opacity: 1;
+    }
+    85% {
+        top:300px; transform: scale(1); transform-origin: center; opacity: 1;
+    }
+    100% {
+        top: -110px; transform: scale(0.25); transform-origin: center; 
+    }
+}
+@keyframes logoanimate {
+    0% {
+        top:300px; transform: scale(0.5); transform-origin: center; opacity: 0;
+    }
+    20% {
+        top:300px; transform: scale(0.9); transform-origin: center; opacity: 1;
+    }
+    85% {
+        top:300px; transform: scale(1); transform-origin: center; opacity: 1;
+    }
+    100% {
+        top: -110px; transform: scale(0.25); transform-origin: center; 
+    }
+}
+
+.vimeo-wrapper {
+   position: fixed;
+   margin-top: -180px;
+   top: 60;
+   left: 0;
+   width: 100%;
+   height: 70%;
+   z-index: -1;
+   pointer-events: none;
+   overflow: hidden;
+}
+.vimeo-wrapper iframe {
+   width: 100vw;
+   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+   min-height: 50vh;
+   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.hoverable{
+  transition: all .2s ease-in-out !important;
+}
+
+.hoverable:hover {
+
+  box-shadow: 0px 0px 6px 4px rgba(0,0,0,.5) !important;
+}
+
+
+
+
+.spotsnav {
+  font-family: futura-pt, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.spotsnav * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.spotsnav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.spotsnav a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.spotsnav a:before,
+.spotsnav a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.spotsnav a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #f4921d;
+  border-top: 3px solid #f4921d;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.spotsnav a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #f4921d;
+  border-bottom: 3px solid #f4921d;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.spotsnav a:hover,
+.spotsnav .current a {
+  color: #ffffff;
+}
+.spotsnav a:hover:before,
+.spotsnav .current a:before,
+.spotsnav a:hover:after,
+.spotsnav .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.butwhy{
+  padding-right: 0px !important;
+
+padding-left: 0px !important;
+}
+
+.biopad{
+ position: fixed !important;
+ top:100%;
+ right:0;
+ left:0;
+
+}
+
+.activeorange{
+color: #f4921d !important;
+
+}
+
+#peterimage, #bradimage, #benimage, #steveimage{
+  cursor: pointer !important;
+}
+
+#peterimage:hover + #petertitle {
+  color: #f4921d !important;
+}
+#bradimage:hover + #bradtitle {
+  color: #f4921d !important;
+}
+#benimage:hover + #bentitle {
+  color: #f4921d !important;
+}
+#steveimage:hover + #stevetitle {
+  color: #f4921d !important;
+}
+
+.lity-close{
+  position: absolute !important;
+}
