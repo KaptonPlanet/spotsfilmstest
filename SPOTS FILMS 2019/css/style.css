@@ -123,7 +123,12 @@ height: 46px;
 }
 
 
-
+.nopadbottom{
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
 
 .spotsnav {
   font-family: futura-pt, sans-serif;
@@ -221,6 +226,9 @@ color: #f4921d !important;
   cursor: pointer !important;
 }
 
+.hovertitle:hover{
+color: #f4921d !important;
+}
 #peterimage:hover + #petertitle {
   color: #f4921d !important;
 }
