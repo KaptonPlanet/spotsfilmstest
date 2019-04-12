@@ -36,7 +36,7 @@ color: #fff; }
 
 .spotsnavbar {
 z-index: 998;
-position: fixed;
+position: relative;
 margin-top: -220px;
 right: 0;
 left: 0;
@@ -145,7 +145,7 @@ animation: movetitleback 0.5s 1  normal forwards ease-out;
 }
 .vimeo-wrapper {
    position: fixed;
-   margin-top: -180px;
+   margin-top: 0px;
    top: 60;
    left: 0;
    width: 100%;
@@ -295,5 +295,155 @@ color: #f4921d !important;
 }
 #steveimage:hover + #stevetitle {
   color: #f4921d !important;
+}
+
+
+
+
+.biotextpad{
+padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem
+}
+
+
+.dirbtn-1 {
+  color: #fff !important;
+}
+
+
+.dirbtn {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  
+  text-align: center;
+}
+.dirbtn:before, .dirbtn:after,
+.dirbtn .dirbtn--inner:before,
+.dirbtn .dirbtn--inner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: currentColor;
+  transition: 0.3s ease-in-out;
+}
+
+.dirbtn--cw:after,
+.dirbtn--ccw:after,
+.dirbtn--cw-tlbr:after,
+.dirbtn--ccw-tlbr:after,
+.dirbtn--cw-trbl:after,
+.dirbtn--ccw-trbl:after {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+.dirbtn--cw .dirbtn--inner:before,
+.dirbtn--ccw .dirbtn--inner:before,
+.dirbtn--cw-tlbr .dirbtn--inner:before,
+.dirbtn--ccw-tlbr .dirbtn--inner:before,
+.dirbtn--cw-trbl .dirbtn--inner:before,
+.dirbtn--ccw-trbl .dirbtn--inner:before {
+  right: 0;
+  left: auto;
+}
+.dirbtn--cw .dirbtn--inner:after,
+.dirbtn--ccw .dirbtn--inner:after,
+.dirbtn--cw-tlbr .dirbtn--inner:after,
+.dirbtn--ccw-tlbr .dirbtn--inner:after,
+.dirbtn--cw-trbl .dirbtn--inner:after,
+.dirbtn--ccw-trbl .dirbtn--inner:after {
+  top: auto;
+  bottom: 0;
+}
+
+.dirbtn--cw:before, .dirbtn--cw:after {
+  width: 0;
+  height: 2px;
+}
+.dirbtn--cw .dirbtn--inner:before,
+.dirbtn--cw .dirbtn--inner:after {
+  width: 2px;
+  height: 0;
+}
+.dirbtn--cw:hover:before, .dirbtn--cw:hover:after {
+  width: 100%;
+}
+.dirbtn--cw:hover .dirbtn--inner:before,
+.dirbtn--cw:hover .dirbtn--inner:after {
+  height: 100%;
+}
+
+.
+
+.dirbtn--cw-tlbr:before, .dirbtn--cw-tlbr:after {
+  width: 0;
+  height: 2px;
+  transition-delay: 0.15s;
+}
+.dirbtn--cw-tlbr .dirbtn--inner:before,
+.dirbtn--cw-tlbr .dirbtn--inner:after {
+  width: 2px;
+  height: 0;
+  transition-delay: 0s;
+}
+.dirbtn--cw-tlbr:hover:before, .dirbtn--cw-tlbr:hover:after {
+  width: 100%;
+  transition-delay: 0s;
+}
+.dirbtn--cw-tlbr:hover .dirbtn--inner:before,
+.dirbtn--cw-tlbr:hover .dirbtn--inner:after {
+  height: 100%;
+  transition-delay: 0.15s;
+}
+
+
+
+.dirbtn--cw-trbl:before, .dirbtn--cw-trbl:after {
+  width: 0;
+  height: 2px;
+  transition-delay: 0s;
+}
+.dirbtn--cw-trbl .dirbtn--inner:before,
+.dirbtn--cw-trbl .dirbtn--inner:after {
+  width: 2px;
+  height: 0;
+  transition-delay: 0.15s;
+}
+.dirbtn--cw-trbl:hover:before, .dirbtn--cw-trbl:hover:after {
+  width: 100%;
+  transition-delay: 0.15s;
+}
+.dirbtn--cw-trbl:hover .dirbtn--inner:before,
+.dirbtn--cw-trbl:hover .dirbtn--inner:after {
+  height: 100%;
+  transition-delay: 0s;
+}
+
+.dirbtn--ccw-trbl:before, .dirbtn--ccw-trbl:after {
+  width: 2px;
+  height: 0;
+  transition-delay: 0s;
+}
+.dirbtn--ccw-trbl .dirbtn--inner:before,
+.dirbtn--ccw-trbl .dirbtn--inner:after {
+  width: 0;
+  height: 2px;
+  transition-delay: 0.15s;
+}
+.dirbtn--ccw-trbl:hover:before, .dirbtn--ccw-trbl:hover:after {
+  height: 100%;
+  transition-delay: 0.15s;
+}
+.dirbtn--ccw-trbl:hover .dirbtn--inner:before,
+.dirbtn--ccw-trbl:hover .dirbtn--inner:after {
+  width: 100%;
+  transition-delay: 0s;
 }
 
